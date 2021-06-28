@@ -1092,8 +1092,8 @@ async def jiosaavn(client: Client, message_: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                        f"<b>🔴 Flood Wait Error 🔴 \nUserbot couldn't join your group due to heavy requests! Make sure user is not banned in group."
+                        "\n\nOr manually add @TechlockVCmusicassistant to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
