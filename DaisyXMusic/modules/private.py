@@ -72,7 +72,7 @@ def map(pos):
         ]
     return button
 
-@Client.on_message(filters.command("vchelp") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["vchelp", "vchelp@techlock_bot"]) & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):
     await message.reply_text(
         f"""**Contact me in PM to get Commands of vchelp**""",
@@ -86,20 +86,3 @@ async def ghelp(_, message: Message):
             ]
         ),
     )
-
-@Client.on_message(filters.command("vchelp@techlock_bot") & ~filters.private & ~filters.channel)
-async def ghelp(_, message: Message):
-    await message.reply_text(
-        f"""**Contact me in PM to get Commands of vchelp**""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Click Me!", url=f"https://t.me/techlock_bot?start=ghelp_vcplayer"
-                    )
-                ]
-            ]
-        ),
-    )
-
-
