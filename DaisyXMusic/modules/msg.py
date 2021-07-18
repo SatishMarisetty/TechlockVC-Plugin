@@ -25,7 +25,7 @@ class Messages():
       HELP_MSG = [
         ".",
 f"""
-**Hey 👋 Welcome back to TECHLOCK VC PLAYER
+**Hey Welcome back to TECHLOCK VC PLAYER
 
 ⚪️ TECHLOCKVCPLAYERv2 can play music in your group's voice chat as well as channel voice chats
 
